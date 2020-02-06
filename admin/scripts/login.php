@@ -52,5 +52,8 @@ function login($username, $password, $ip){
         //user does not exist
         $message = 'User does not exist';
 }
+
+// display last time of succesful login
+
 return $message;
 }
