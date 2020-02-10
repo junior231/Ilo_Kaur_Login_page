@@ -14,9 +14,6 @@
     <h2>Welcome! Admin</h2>
     <?php 
 
-    // connect to db
-    $conn = mysqli_connect('localhost','root','','db_login');
-
     // set timezone
     date_default_timezone_set("America/Toronto");
     
@@ -27,6 +24,22 @@
     {
     $last_login = $_COOKIE['lastVisit'];
     echo "You last logged in at - ". $last_login;
+    }
+
+
+    // display greeting messages based on current time of the day
+    $time = date("H");
+    // If the time is less than 1200hrs 
+    if ($time < "12") {
+        echo "<br> Good morning";
+    } else
+    // time is more than or equal to 1200hrs and less than 1700hrs
+    if ($time >= "12" && $time < "17") {
+        echo "<br> Good afternoon";
+    } else
+    // time is more than 1700hrs
+    if ($time >= "17") {
+        echo "<br> Good evening";
     }
     ?>
 
