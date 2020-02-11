@@ -4,5 +4,5 @@ Displaying Date and time of Last successful login
 https://krazytech.com/programs/php-display-last-visited-date-time
 https://www.php.net/manual/en/function.setcookie
 
-This can be done a couple of ways, but this method is short and simple. I made use of the setcookie() function to store the time and date of last visit and echoed the last time of visit to the admin page whenever you login.
-
+Greeting based on time of the day
+https://gist.github.com/introwit/8dbe76dee57033bfce1b
