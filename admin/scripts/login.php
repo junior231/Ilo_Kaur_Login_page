@@ -57,3 +57,17 @@ function login($username, $password, $ip){
 
 return $message;
 }
+
+function confirm_logged_in(){
+    if(!isset($_SESSION['user_id'])){
+        redirect_to('admin_login.php');
+    }
+}
+
+
+// destroy session
+function logout(){
+    session_destroy();
+    redirect_to('admin_login.php');
+}
+

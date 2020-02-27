@@ -1,4 +1,4 @@
-<?php
+ <?php
     require_once '../load.php';
 
 ?>
@@ -12,6 +12,9 @@
 </head>
 <body>
     <h2>Welcome! Admin</h2>
+
+    <a href="admin_createuser.php">Add User</a><br>
+    <a href="admin_logout.php">Log Out</a>
     <?php 
 
     // set timezone
